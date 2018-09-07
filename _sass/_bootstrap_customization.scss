@@ -1,3 +1,67 @@
 // This is the place to place Bootstrap-related CSS customizations.
 // As example you can start by importing the _bootswatch.scss file from one of the
 // theme provided by https://bootswatch.com .
+
+body {
+  color: #333;
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.7em;
+}
+
+h1 {
+  &.home {
+    color: #f6f6f6;
+    font-family: 'Noto Serif KR', sans-serif;
+    font-size: 3.2rem;
+    line-height: 1.1;
+    text-shadow: 4px 4px 10px rgba(20, 40, 80, 1);
+    .minor {
+      font-size: .5em;
+      &.afterthought {
+        display: block;
+        font-size: .4em;
+        margin-top: 2.5em;
+      }
+    }
+  }
+}
+
+li {
+  margin-bottom: .5em;
+}
+
+/*** navigation ***/
+.navbar {
+  background-color: white;
+  //box-shadow: 0px 10px 10px -3px rgba(0,0,0,0.3);
+  box-shadow: $box-shadow;
+  font-family: 'Noto Sans KR', sans-serif;
+  .navbar-brand {
+    font-weight: 700;
+    font-size: .9em;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+  }
+  .nav-link {
+    font-size: .85em;
+  }
+  li {
+    margin-bottom: 0;
+  }
+}
+
+/*** home ***/
+.home-background {
+  background-image: url(../assets/images/Flower-1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+}
+
+.intro {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+}
+
