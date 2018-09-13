@@ -3,12 +3,15 @@
 
   {%- include head.html -%}
 
-  <body>
+  <body class="contact">
 
     {%- include header.html -%}
 
     <div class="pt-5">
       <div class="container page-content">
+
+          <h1>{{ page.title | escape }}</h1>
+
           {{ content }}
       </div>
     </div>
