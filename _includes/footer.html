@@ -1,40 +1,36 @@
-
-<div class="py-5 border-top footer">
+<div class="py-4 border-top footer">
   <div class="container">
-
-    <p class="h5 mb-3">{{ site.title | escape }}</p>
-
     <div class="row">
-
-      <div class="col-sm">
-        <ul class="list-unstyled">
-          <li>
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-          </li>
-          {%- if site.email -%}
-            <li>
-              <a href="mailto:{{ site.email }}">
-                {{ site.email }}
-              </a>
-            </li>
-          {%- endif -%}
-        </ul>
+      <div class="col-sm-7">
+        <div class="contact-info">
+          "The whole point of human-centered design is to take complexity, to turn what would appear to be a complicated tool into one that fits the task, that is understandable, usable, enjoyable." &mdash; Don Norman
+        </div>
       </div>
-
-
-      <div class="col-sm text-right">
-        <p>{{- site.description | escape -}}</p>
-
-        <p>
-          <a href="https://nicolas-van.github.io/bootstrap-4-github-pages/">Powered by Bootstrap 4 Github Pages</a>
+      <div class="col-sm-4 ml-auto text-right">
+        <p class="contact-info">
+          Valarie Martin Stuart<br>
+          Dallas, Texas, USA<br>
+          469-660-5793<br>
+          <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+          <br>
+          <br>
+          <a href="https://www.linkedin.com/in/valariems" class="icons">
+            <span class="fab fa-linkedin-in ml-3"></span>
+          </a>
+          <a href="https://twitter.com/valariems" class="icons">
+            <span class="fab fa-twitter ml-3"></span>
+          </a>
+          <a href="https://github.com/valariems/" class="icons">
+            <span class="fab fa-github ml-3"></span>
+          </a>
+          <a href="https://dribbble.com/valariems" class="icons">
+            <span class="fab fa-dribbble ml-3"></span>
+          </a>
+          <a href="https://www.instagram.com/valariems/" class="icons">
+            <span class="fab fa-instagram ml-3"></span>
+          </a>
         </p>
       </div>
-
     </div>
-
   </div>
 </div>
