@@ -18,6 +18,12 @@
           {%- endif -%}
         {% endfor -%}
 
+        {% if page.active == "portfolio" %}
+            <li class="nav-item active"><a class="nav-link" href="{{ site.baseurl }}{% link portfolio.html %}">Portfolio</a></li>
+        {% else %}
+            <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}{% link portfolio.html %}">Portfolio</a></li>
+        {% endif %}
+
         {% if page.active == "resume" %}
             <li class="nav-item active"><a class="nav-link" href="{{ site.baseurl }}{% link resume.html %}">Resume</a></li>
         {% else %}
