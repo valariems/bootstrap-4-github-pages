@@ -21,6 +21,10 @@ h2 {
   font-family: 'Noto Serif KR', sans-serif;
   font-size: 1.4rem;
   margin-top: 1em;
+  &.portfolio {
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 2em;
+  }
 }
 
 h3 {
@@ -43,6 +47,50 @@ h4 {
 
 a {
   text-decoration: underline;
+}
+
+/*** custom colors ***/
+
+.text-purple {
+  color: #984090;
+}
+.bkg-purple-light {
+  background-color: #F4E6F4;
+}
+
+.text-green {
+  color: #417505;
+}
+
+.text-red {
+  color: #D0021B;
+}
+
+.text-lime {
+  color: #7B9546;
+}
+.bkg-lime-light {
+  background-color: #E4EBD5;
+}
+
+.text-orange {
+  color: #D18100;
+}
+
+.text-sky {
+  color: #359BC0;
+}
+
+.bkg-sky-light {
+  background-color: #E0F1F5;
+}
+
+.text-dark-blue {
+  color: #004E5C;
+}
+
+.text-lt-gray {
+  color: #999
 }
 
 
@@ -125,6 +173,149 @@ h1.home {
 .contact {
   background: url(../assets/images/dog-holding-flowers.png) no-repeat 85% 4em fixed;
 }
+
+/*** portfolio ***/
+.sus-table {
+  border: 1px solid #ccc;
+  font-size: .7em;
+  line-height: 1.3;
+  padding: 10px;
+  p {
+    font-weight: 700;
+  }
+  table {
+    font-weight: 400;
+  }
+}
+
+.sus-charts {
+  border: 1px solid #ccc;
+}
+
+.big-sus-score {
+  font-size: 3.8em;
+  font-weight: 700;
+  padding-top: 3rem;
+}
+
+.sus-caption {
+  font-size: .9em;
+  color: #555;
+}
+
+.card.request {
+  font-size: .9em;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 1em;
+}
+
+.step {
+  .step-content {
+    margin-left: 1em;
+    padding: 5px 1em 5px 60px;
+    font-size: .85em;
+    line-height: 1.3;
+  }
+  img {
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    float: left;
+    position: relative;
+    top: -5px;
+  }
+  .fa-long-arrow-alt-down {
+    color: #ccc;
+    padding: 5px 0 5px 25px;
+  }
+}
+
+ol {
+  counter-reset: section;
+  list-style: none;
+  padding-left: 40px;
+}
+ol li {
+  margin: 0 0 0.5rem 0;
+  counter-increment: section;
+  position: relative;
+}
+ol li::before {
+  content: counter(section);
+  font-size: .8rem;
+  font-weight: 700;
+  position: absolute;
+  left: -3em;
+  background: #eee;
+  border-radius: 100%;
+  text-align: center;
+  width: 2em;
+  height: 2em;
+  display: inline-block;
+}
+
+.event-request-wire {
+  border: 1px solid #ccc;
+}
+
+#event-req-wire-one {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 0.3s ease;
+  width: 700px;
+  height: 400px;
+  background-image: url("../assets/images/portfolio/event-req-george-1.png"); }
+  #event-req-wire-one:hover {
+    background-image: url("../assets/images/portfolio/event-req-george-1a.png"); }
+
+#event-req-wire-two {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 0.3s ease;
+  width: 700px;
+  height: 400px;
+  background-image: url("../assets/images/portfolio/event-req-julia-2.png"); }
+  #event-req-wire-two:hover {
+    background-image: url("../assets/images/portfolio/event-req-julia-2a.png"); }
+
+#event-req-wire-three {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 0.3s ease;
+  width: 700px;
+  height: 400px;
+  background-image: url("../assets/images/portfolio/event-req-george-3.png"); }
+  #event-req-wire-three:hover {
+    background-image: url("../assets/images/portfolio/event-req-george-3a.png"); }
+
+#event-req-wire-four {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 0.3s ease;
+  width: 700px;
+  height: 400px;
+  background-image: url("../assets/images/portfolio/event-req-julia-4.png"); }
+  #event-req-wire-four:hover {
+    background-image: url("../assets/images/portfolio/event-req-julia-4a.png"); }
+
+#event-req-wire-five {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 0.3s ease;
+  width: 700px;
+  height: 400px;
+  background-image: url("../assets/images/portfolio/event-req-brad-5.png"); }
+  #event-req-wire-five:hover {
+    background-image: url("../assets/images/portfolio/event-req-brad-5a.png"); }
+
+
+
 
 /*** footer ***/
 .footer {
